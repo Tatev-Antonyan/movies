@@ -4,10 +4,6 @@ import {useState} from 'react'
 function MovieDetails({data}){
     const { id } = useParams();
      
-    //  const searchedMovie = list.find((i) => i.id === +movieId)
-   
-   
- 
     return(
         <div>
             <h1>Movie Details</h1>
@@ -17,7 +13,7 @@ function MovieDetails({data}){
                             <p><b>Title:</b> {i.title}</p>
                             <p><b>Year:</b> {i.year}</p>
                             <p><b>Genre:</b> {i.genre}</p>
-                            <img src={i.img}/>
+                            <img className={'movie_item_img'} src={i.img}/>
                             <p><b>Description: <br/> </b>{i.description}</p>
                         </div>
                 )

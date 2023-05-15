@@ -1,152 +1,159 @@
-* {
-  font-family: 'Manrope', sans-serif;
+.landing_title {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 8%;
+    border: 8px dashed darkslateblue;
+    line-height: 400px;
+    margin-inline: 150px;
+    color: darkslateblue;
 
 }
-.login_page{
-  text-align: center;
-  form {
-    display: inline-block;
-    input:last-of-type{
-      margin-inline: auto;
-      cursor: pointer;
-      color: white;
-      background-color: black;
-      border-radius: 5px;
-      &:hover{
-        scale: 1.1;
-        background-color: grey;
-        border: transparent;
-      }
-    }
-  }
-  input {
-    display: block;
-    margin-top: 20px;
-    height: 30px;
-    width: 300px;
-  }
-
-}
-.logo {
-  width: 120px;
-  cursor: pointer;
-}
-.movies_container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  h1 {
-    width: 100%;
-  }
-}
-.movie_item {
-  width: 25%;
-  min-width: 250px;
-  margin-inline: 4%;
-  display:inline-block;
-  vertical-align: top;
-  margin-top: 25px;
-  button {
-    width: 150px;
-    height: 35px;
-    cursor: pointer;
-      color: white;
-      background-color: black;
-      border-radius: 5px;
-      &:hover{
-        scale: 1.1;
-        background-color: grey;
-        border: transparent;
-      }
-  }
-
-}
-.movie_img {
-  width: 100%;
-  height: 400px;
-}
-
-.movie_item_img {
-  height:400px;
-  width:320px
-}
-
-.popup {
-   background: white;
-   width: 300px;
-   text-align: center;
-   padding: 5% 0;
-   position: relative;
-   button:first-of-type {
+.landing_btn {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 30px;
-    color: red;
+    right: 11%;
+    top: 5%;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: darkslateblue;
+    border: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        border: 2px solid darkslateblue;
+        color: darkslateblue;
+        scale: 1.1;
+
+    }
+}
+.login_container {
+    border: 5px dashed darkslateblue;
+    width: 30%;
+    margin: 15% auto;
+    text-align: center;
+    h1 {
+        font-size: 50px;
+        color: darkslateblue;
+    }
+    input {
+        display: block;
+        margin-inline: auto;
+        margin-top: 20px;
+        width: 65%;
+        height: 20px;
+    }
+    button {
+        margin: 25px 0;
+        color: white;
+        background-color: darkslateblue;
+        border: transparent;
+        width: 25%;
+        height: 25px;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            border: 2px solid darkslateblue;
+            color: darkslateblue;
+            scale: 1.1;
+    
+        }
+        
+    }
+}
+
+.input_container {
+    text-align: center;
+    input{
+        display: block;
+        margin-inline: auto;
+        margin-top: 20px;
+        width: 65%;
+        height: 20px;
+    }
+    button {
+        margin: 25px 0;
+        color: white;
+        background-color: darkslateblue;
+        border: transparent;
+        width: 25%;
+        height: 25px;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+            border: 2px solid darkslateblue;
+            color: darkslateblue;
+            scale: 1.1;
+        }
+    }
+}
+
+
+table  {
+    width: 90%;
+    border: 1px solid  rgb(211, 208, 208);
+    margin-inline: auto;
+button {
     background-color: transparent;
     border: transparent;
+    font-size: 20px;
+    color: red;
     font-weight: 700;
     cursor: pointer;
     &:hover{
-      scale: 1.1;
+        scale: 1.2;
+        color: rgb(216, 3, 3);
     }
-   }
-   button:last-of-type {
-    cursor: pointer;
-    width: 70px;
-    height: 30px;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    &:hover{
-      scale: 1.1;
-      background-color: grey;
-      border: transparent;
+    &:active{
+        scale: 0.9;
+        color: red;
     }
-   }
-   input {
-    height: 24px;
-   }
+}
+.remove_btn{
+    width: 40px;
 }
 
-.popup_bckg {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: 1;
-  background: rgba(136,136,136,0.25);
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    th, td {
+        width: 180px;
+        height: 35px;
+        text-align: center;
+        border-radius: 15px;
+    }
+   
 }
 
-.add_inputs {
-  width: 94%;
-  margin-inline: auto;
-  padding: 15px 0;
-  margin-bottom: 20px;
-  
-  input {
-      width: 96%;
-      height: 30px;
-      margin-bottom: 15px;
-      border: 1px solid #AAAAAA;
-      border-radius: 5px;
-  }
-  
-  button {
-    width: 96%;
-    height: 30px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    &:hover{
-      scale: 1.01;
-      background-color: grey;
-      border: transparent;
+.users {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    button{
+        margin: 10px;
+        color: white;
+        background-color: darkslateblue;
+        border: transparent;
+        width: 25%;
+        height: 25px;
+        cursor: pointer;
+        &:hover {
+            background-color: white;
+            border: 2px solid darkslateblue;
+            color: darkslateblue;
+            scale: 1.1;
+        }
     }
-  }
+}
+.users_header {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.notfoundPage {
+    display: block;
+    text-align: center;
+    margin: 15% 0;
 }
